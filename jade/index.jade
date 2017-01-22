@@ -65,15 +65,15 @@ html(ng-app="riot-app")
           .playerSelectorsBox
             .playerContainer
               .player.kapsuliPlayer(ng-class="{'on':playerSelectorModel === 'kap'}")
-                img(src="./img/kapsuli.png", alt="")
+                img(src="./img/imaqtpie.png", alt="")
               .player.allStarPlayer(ng-class="{'on':playerSelectorModel === 'star'}")
                 img(src="./img/all-star.jpg", alt="")
               .player.lcsPlayer(ng-class="{'on':playerSelectorModel === 'lcs'}")
-                img(src="./img/lcs.jpg", alt="")
+                img(src="./img/blizz-capsule.jpg", alt="")
             .selectors
               .kap.select(ng-model="playerSelectorModel" uib-btn-radio="'kap'") Kapsuli Player
               .star.select(ng-model="playerSelectorModel" uib-btn-radio="'star'") All Star 2016
-              .lcs.select(ng-model="playerSelectorModel" uib-btn-radio="'lcs'") LCS 2016
+              .lcs.select(ng-model="playerSelectorModel" uib-btn-radio="'lcs'") HearthStone
               
         .contentBox
           h1.title Kapsuli
@@ -87,10 +87,10 @@ html(ng-app="riot-app")
                 p • A customizable player, helping you build your brand.
                 p • Real estate for additional revenue stream through extended sponsor exposure.
               .lcsDescription(ng-show="playerSelectorModel === 'lcs'")
-                h1 LCS 2016 Player
+                h1 HearthStone Player
                 p • Improved brand exposure
-                p • Integration capabilities for multiple API to feed information about games being played, player stats or schedules.
-                p • Link to external ressources (LolEsport website for example).
+                p • Integration capabilities for multiple API to feed information about games being played (Decks, stats)
+                p • Link to external ressources (HearthStone, Battle.net).
               .starDescription(ng-show="playerSelectorModel === 'star'")
                 h1 All Star 2016 Player
                 p • Live update of event status (API based), to notify your audience in real time on Twitter 

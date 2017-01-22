@@ -70,14 +70,14 @@
         <div class="playerBox">
           <div class="playerSelectorsBox">
             <div class="playerContainer">
-              <div ng-class="{'on':playerSelectorModel === 'kap'}" class="player kapsuliPlayer"><img src="./img/kapsuli.png" alt=""></div>
+              <div ng-class="{'on':playerSelectorModel === 'kap'}" class="player kapsuliPlayer"><img src="./img/imaqtpie.png" alt=""></div>
               <div ng-class="{'on':playerSelectorModel === 'star'}" class="player allStarPlayer"><img src="./img/all-star.jpg" alt=""></div>
-              <div ng-class="{'on':playerSelectorModel === 'lcs'}" class="player lcsPlayer"><img src="./img/lcs.jpg" alt=""></div>
+              <div ng-class="{'on':playerSelectorModel === 'lcs'}" class="player lcsPlayer"><img src="./img/blizz-capsule.jpg" alt=""></div>
             </div>
             <div class="selectors">
               <div ng-model="playerSelectorModel" uib-btn-radio="'kap'" class="kap select">Kapsuli Player</div>
               <div ng-model="playerSelectorModel" uib-btn-radio="'star'" class="star select">All Star 2016</div>
-              <div ng-model="playerSelectorModel" uib-btn-radio="'lcs'" class="lcs select">LCS 2016</div>
+              <div ng-model="playerSelectorModel" uib-btn-radio="'lcs'" class="lcs select">HearthStone</div>
             </div>
           </div>
         </div>
@@ -94,10 +94,10 @@
                 <p>• Real estate for additional revenue stream through extended sponsor exposure.</p>
               </div>
               <div ng-show="playerSelectorModel === 'lcs'" class="lcsDescription">
-                <h1>LCS 2016 Player</h1>
+                <h1>HearthStone Player</h1>
                 <p>• Improved brand exposure</p>
-                <p>• Integration capabilities for multiple API to feed information about games being played, player stats or schedules.</p>
-                <p>• Link to external ressources (LolEsport website for example).</p>
+                <p>• Integration capabilities for multiple API to feed information about games being played (Decks, stats)</p>
+                <p>• Link to external ressources (HearthStone, Battle.net).</p>
               </div>
               <div ng-show="playerSelectorModel === 'star'" class="starDescription">
                 <h1>All Star 2016 Player</h1>
